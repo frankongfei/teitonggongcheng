@@ -16,13 +16,13 @@
             
                     </div>
                     <div class="gongchenggongsi">
-                        <h1>
+                        <p>
                             中移铁通上海分公司
-                        </h1>
+                        </p>
                     </div>
                 </div>
            <div class="logger">
-                <form class="input">
+                <!--<form class="input">
                     <div class="input1">
                         <label for="zhanghao">
                             <span class="username">账号</span>
@@ -41,7 +41,28 @@
                         <button>登录</button>
                         
                     </div>
-                </form>
+                </form>-->
+                <form id="loginform" method="post" name="login" action="http://www.123er.com/logging.php?action=login&amp;loginsubmit=true">
+                    <input type="hidden" name="formhash" value="{FORMHASH}" />
+                    <input type="hidden" name="cookietime" value="2592000" />
+                    <input type="hidden" name="loginfield" value="username" />
+                    <div class="input1">
+                        <label for="zhanghao">
+                            <span class="username">账号</span>
+                        </label>
+                        <input type="text" id="username" name="username" size="15" maxlength="40" tabindex="1" onclick="this.value = ''" />
+                    </div>
+                    
+                    <br>
+                    <div class="input1">
+                        <label for="zhanghao">
+                            <span class="username">密码</span>
+                        </label>
+                        <input name="password" type="password" id="password" tabindex="2" onkeypress="if((event.keyCode ? event.keyCode : event.charCode) == 13) $('loginform').submit()" size="15" />  
+                    </div>
+                    
+                    <button name="userlogin" type="submit" value="true">登录</button>
+                                            </form>
             </div>
         </div>
     </main>
