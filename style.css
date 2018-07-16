@@ -11,8 +11,8 @@ body{
 .topnavbar > .logo{
     float: left;
     border: 1px solid red;
-    height: 100px;
-    width: 100px;
+    height: 82px;
+    width: 82px;
     background-image: url(./image/yidonglogo.png);
     background-position: center center;
     background-size: cover;
@@ -25,8 +25,12 @@ body{
     border: 1px solid blue;
 }
 
-.topnavbar > .gongchenggongsi h1{
-    font-family: 'KaiTi';
+.topnavbar > .gongchenggongsi p{
+   /* font-family: 'KaiTi';*/
+    font-family: 'Microsoft YaHei';
+    color: #333333;
+    font-size: 60px;
+    margin: 0;
 }
 
 /*main .background{
@@ -45,3 +49,4 @@ html {
     -o-background-size: cover;
     background-size: cover;
 }
+
